@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <testsuite name="Model Suite" tests="13" failures="7" errors="0" time="0.001">
+      <testcase name="Cuboid Validations Requires a Width" classname="Model Suite" time="5.6917e-05"></testcase>
+      <testcase name="Cuboid Validations Requires a Height" classname="Model Suite" time="1.4709e-05"></testcase>
+      <testcase name="Cuboid Validations Requires a Depth" classname="Model Suite" time="1.4916e-05"></testcase>
+      <testcase name="Cuboid with 3 x 3 x 3 Has 27 volume" classname="Model Suite" time="0.000146875">
+          <failure type="Failure">/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/models/cuboid_test.go:64&#xA;Expected&#xA;    &lt;uint&gt;: 0&#xA;to equal&#xA;    &lt;uint&gt;: 27&#xA;/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/models/cuboid_test.go:65</failure>
+      </testcase>
+      <testcase name="Cuboid with 3 x 3 x 3 To JSON" classname="Model Suite" time="0.000178542">
+          <failure type="Failure">/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/models/cuboid_test.go:68&#xA;Expected&#xA;    &lt;nil&gt;: nil&#xA;to be equivalent to&#xA;    &lt;uint&gt;: 27&#xA;/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/models/cuboid_test.go:74</failure>
+      </testcase>
+      <testcase name="Bag Validations Requires a Title" classname="Model Suite" time="2.4917e-05"></testcase>
+      <testcase name="Bag Validations Requires a Volume" classname="Model Suite" time="1.3083e-05"></testcase>
+      <testcase name="Bag with no cuboids Has 0 PayloadVolume" classname="Model Suite" time="4.17e-07"></testcase>
+      <testcase name="Bag with no cuboids Has 10 AvailableVolume" classname="Model Suite" time="0.000111834">
+          <failure type="Failure">/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/models/bag_test.go:78&#xA;Expected&#xA;    &lt;uint&gt;: 0&#xA;to be equivalent to&#xA;    &lt;uint&gt;: 10&#xA;/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/models/bag_test.go:79</failure>
+      </testcase>
+      <testcase name="Bag with no cuboids To JSON" classname="Model Suite" time="0.000133125">
+          <failure type="Failure">/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/models/bag_test.go:82&#xA;Expected&#xA;    &lt;float64&gt;: 0&#xA;to be equivalent to&#xA;    &lt;uint&gt;: 10&#xA;/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/models/bag_test.go:88</failure>
+      </testcase>
+      <testcase name="Bag with one cuboids Has 18 PayloadVolume" classname="Model Suite" time="0.000113125">
+          <failure type="Failure">/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/models/bag_test.go:74&#xA;Expected&#xA;    &lt;uint&gt;: 0&#xA;to equal&#xA;    &lt;uint&gt;: 18&#xA;/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/models/bag_test.go:75</failure>
+      </testcase>
+      <testcase name="Bag with one cuboids Has 2 AvailableVolume" classname="Model Suite" time="0.00010575">
+          <failure type="Failure">/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/models/bag_test.go:78&#xA;Expected&#xA;    &lt;uint&gt;: 0&#xA;to be equivalent to&#xA;    &lt;uint&gt;: 2&#xA;/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/models/bag_test.go:79</failure>
+      </testcase>
+      <testcase name="Bag with one cuboids To JSON" classname="Model Suite" time="0.00012325">
+          <failure type="Failure">/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/models/bag_test.go:82&#xA;Expected&#xA;    &lt;float64&gt;: 0&#xA;to be equivalent to&#xA;    &lt;uint&gt;: 18&#xA;/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/models/bag_test.go:87</failure>
+      </testcase>
+  </testsuite>

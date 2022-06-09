@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <testsuite name="Controller Suite" tests="17" failures="6" errors="0" time="0.025">
+      <testcase name="Cuboid Controller List Response HTTP status code 200" classname="Controller Suite" time="0.002307791"></testcase>
+      <testcase name="Cuboid Controller List Fetch all cuboids" classname="Controller Suite" time="0.001844083">
+          <failure type="Failure">/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/controllers/cuboid_controller_test.go:47&#xA;Expected&#xA;    &lt;nil&gt;: nil&#xA;not to be nil&#xA;/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/controllers/cuboid_controller_test.go:54</failure>
+      </testcase>
+      <testcase name="Cuboid Controller Get When the cuboid is present Response HTTP status code 200" classname="Controller Suite" time="0.00137925">
+          <failure type="Failure">/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/controllers/cuboid_controller_test.go:72&#xA;Expected&#xA;    &lt;int&gt;: 404&#xA;to equal&#xA;    &lt;int&gt;: 200&#xA;/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/controllers/cuboid_controller_test.go:73</failure>
+      </testcase>
+      <testcase name="Cuboid Controller Get When the cuboid is present Get the cuboid" classname="Controller Suite" time="0.001491917">
+          <failure type="Failure">/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/controllers/cuboid_controller_test.go:76&#xA;Expected&#xA;    &lt;nil&gt;: nil&#xA;to be equivalent to&#xA;    &lt;uint&gt;: 1&#xA;/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/controllers/cuboid_controller_test.go:78</failure>
+      </testcase>
+      <testcase name="Cuboid Controller Get When cuboid is not present Response HTTP status code 404" classname="Controller Suite" time="0.001398125"></testcase>
+      <testcase name="Cuboid Controller Create Response HTTP status code 201" classname="Controller Suite" time="0.001874209"></testcase>
+      <testcase name="Cuboid Controller Create Returns the created cuboid" classname="Controller Suite" time="0.001604042">
+          <failure type="Failure">/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/controllers/cuboid_controller_test.go:119&#xA;Expected&#xA;    &lt;nil&gt;: nil&#xA;not to be nil&#xA;/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/controllers/cuboid_controller_test.go:124</failure>
+      </testcase>
+      <testcase name="Cuboid Controller Create When cuboid does not fit into the bag Does not create the Cuboid" classname="Controller Suite" time="0.001574584">
+          <failure type="Failure">/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/controllers/cuboid_controller_test.go:133&#xA;Expected&#xA;    &lt;int&gt;: 201&#xA;to equal&#xA;    &lt;int&gt;: 400&#xA;/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/controllers/cuboid_controller_test.go:134</failure>
+      </testcase>
+      <testcase name="Cuboid Controller Create When the bag is disabled Does not admit new cuboids" classname="Controller Suite" time="0.002010375">
+          <failure type="Failure">/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/controllers/cuboid_controller_test.go:147&#xA;Expected&#xA;    &lt;int&gt;: 201&#xA;to equal&#xA;    &lt;int&gt;: 400&#xA;/Users/wilsonrios/workspace/go/cuboid-challenge-go/app/tests/controllers/cuboid_controller_test.go:148</failure>
+      </testcase>
+      <testcase name="Cuboid Controller Update Response HTTP status code 200" classname="Controller Suite" time="0">
+          <skipped></skipped>
+      </testcase>
+      <testcase name="Cuboid Controller Update Returns the updated cuboid" classname="Controller Suite" time="0">
+          <skipped></skipped>
+      </testcase>
+      <testcase name="Cuboid Controller Update When cuboid does not fit into the bag Response HTTP status code 400" classname="Controller Suite" time="0">
+          <skipped></skipped>
+      </testcase>
+      <testcase name="Cuboid Controller Update When cuboid does not fit into the bag Response a JSON with error message &#39;Insufficient capacity in bag&#39;" classname="Controller Suite" time="0">
+          <skipped></skipped>
+      </testcase>
+      <testcase name="Cuboid Controller Update When cuboid is not present Response HTTP status code 404" classname="Controller Suite" time="0">
+          <skipped></skipped>
+      </testcase>
+      <testcase name="Cuboid Controller Delete When the cuboid is present Response HTTP status code 200" classname="Controller Suite" time="0">
+          <skipped></skipped>
+      </testcase>
+      <testcase name="Cuboid Controller Delete When the cuboid is present Remove the cuboid" classname="Controller Suite" time="0">
+          <skipped></skipped>
+      </testcase>
+      <testcase name="Cuboid Controller Delete When cuboid is not present Response HTTP status code 404" classname="Controller Suite" time="0">
+          <skipped></skipped>
+      </testcase>
+      <testcase name="Bag Controller List Response HTTP status code 200" classname="Controller Suite" time="0.001874916"></testcase>
+      <testcase name="Bag Controller List Fetch all bags" classname="Controller Suite" time="0.002053"></testcase>
+      <testcase name="Bag Controller Get When the bag is present Response HTTP status code 200" classname="Controller Suite" time="0.00119825"></testcase>
+      <testcase name="Bag Controller Get When the bag is present Get the bag" classname="Controller Suite" time="0.001074625"></testcase>
+      <testcase name="Bag Controller Get When the bag is not present Response HTTP status code 404" classname="Controller Suite" time="0.001209584"></testcase>
+      <testcase name="Bag Controller Create When the payload is valid Response HTTP status code 201" classname="Controller Suite" time="0.000927417"></testcase>
+      <testcase name="Bag Controller Create When the payload is valid Create the bag" classname="Controller Suite" time="0.000902834"></testcase>
+      <testcase name="Bag Controller Create When the payload is invalid Response HTTP status code 400" classname="Controller Suite" time="0.000595542"></testcase>
+  </testsuite>
